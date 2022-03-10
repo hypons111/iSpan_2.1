@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/Project_2/AllDataJsonServlet";
+const BASE_URL = "http://localhost:8080/iSpanSecond/AllDataJsonServlet";
 const resultTable = document.querySelector("#resultTable")
 const id = document.querySelector('#id')
 const columnSearchs = document.querySelectorAll('.columnSearch')
@@ -98,7 +98,7 @@ function showData(data) {
 		contents += "<td>" + data[i].stock + "</td>"
 		contents += "<td>" + data[i].cost + "</td>"
 		contents += "<td>" + data[i].price + "</td>"
-		contents += "<td><img src='image/product/" + data[i].image + "' width='50px'></td>"
+		contents += "<td><img src='images/product/" + data[i].image + "' width='50px'></td>"
 		contents += "<td><a href=edit.jsp?id=" + data[i].id + "><button>修改</button></a></td>"
 		contents += "<td><a href=DeleteServlet?id=" + data[i].id + "><button>刪除</button></a></td></tr>"
 	}

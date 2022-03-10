@@ -1,7 +1,7 @@
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
 const targetID = urlParams.get('id')
-const BASE_URL = "http://localhost:8080/Project_2/AllDataJsonServlet"
+const BASE_URL = "http://localhost:8080/iSpanSecond/AllDataJsonServlet"
 const typeList = ["MEAT", "VEGE", "BEVE"]
 const supplierList = ["悠活農村", "菜鮮生", "新鮮屋", "天天蔬菜箱", "GO蔬菜箱"]
 const columnList = ["產品種類", "產品供應商", "產品編號", "產品名稱", "產品存量", "產品買價", "產品售價", "產品圖片"]

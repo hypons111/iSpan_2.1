@@ -21,9 +21,9 @@ public class InsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setHeader("Cache-Control", "no-cache"); // HTTP 1.1
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1
 		response.setHeader("Pragma", "no-cache"); // HTTP 1.0
-		response.setDateHeader("Expires", -1); // Prevents caching at the proxy server
+		response.setDateHeader("Expires", 0); // Prevents caching at the proxy server
 
 		response.setContentType("text/html;charset=UTF-8");
 		response.setCharacterEncoding("UTF-8");
@@ -39,7 +39,7 @@ public class InsertServlet extends HttpServlet {
 		String image = id + ".jpg";
 
 		for (Part part : request.getParts()) {
-			part.write("E:/Project/projectWorkspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/iSpanSecond/image/product/" + id + ".jpg");
+			part.write("E:/Project/projectWorkspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/iSpanSecond/images/product/" + id + ".jpg");
 		}
 		
 		DAO dao = new DAO();

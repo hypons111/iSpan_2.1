@@ -6,7 +6,7 @@ const type = document.querySelector("#type")
 const submit = document.querySelector("#submit")
 const inputs = document.querySelectorAll(".input")
 const submitResult = document.querySelector("#submitResult")
-const BASE_URL = "http://localhost:8080/Second/AllDataJsonServlet"
+const BASE_URL = "http://localhost:8080/iSpanSecond/AllDataJsonServlet"
 let rawData = []
 
 axios

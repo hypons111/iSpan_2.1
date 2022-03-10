@@ -40,7 +40,7 @@ public class EditServlet extends HttpServlet {
 		String newImageName = image.getSubmittedFileName();
 		if (newImageName != "") {
 			for (Part part : request.getParts()) {
-				part.write("E:/Project/projectWorkspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/iSpanSecond/image/product/" + id + ".jpg");
+				part.write("E:/Project/projectWorkspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/iSpanSecond/images/product/" + id + ".jpg");
 			}
 		}
 
