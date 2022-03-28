@@ -14,7 +14,7 @@ public class ConnectionFactory {
 	}
 
 	public static Connection createConnection() {
-		String urlStr = "jdbc:sqlserver://localhost:1433;databaseName=JDBCDemoDB;user=sa;password=Passw0rd";
+		String urlStr = "jdbc:sqlserver://localhost:1433;databaseName=hypons;user=sa;password=Zz94057704";
 		try {
 			Class.forName(DRIVER);
 			Connection conn = DriverManager.getConnection(urlStr);

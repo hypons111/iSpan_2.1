@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-            
-    
-    <wb-module deploy-name="iSpanSecond">
-                        
-        
-        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
-                        
-        
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-                        
-        
-        <property name="java-output-path" value="/iSpanSecond/build/classes"/>
-        <property name="context-root" value="iSpanSecond"/>
                     
     
-    </wb-module>
+    
+    
+    <wb-module deploy-name="iSpan_2.1">
+                                        
         
+        
+        
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                                        
+        
+        
+        
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                                        
+        
+        
+        
+        <property name="java-output-path" value="/iSpan_2.1/build/classes"/>
+        <property name="context-root" value="iSpan_2.1"/>
+                                    
+    
+    
+    
+    </wb-module>
+                
+
+
 
 </project-modules>
